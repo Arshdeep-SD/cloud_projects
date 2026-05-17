@@ -1,0 +1,52 @@
+/* ArXiv Paper Browser — layout overrides for Pico CSS */
+
+.site-header {
+    border-bottom: 1px solid var(--pico-muted-border-color);
+    margin-bottom: 1rem;
+}
+
+.header-tools {
+    padding-bottom: 1rem;
+}
+
+.footer-wrap {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid var(--pico-muted-border-color);
+    margin-top: 2rem;
+}
+
+#auth-box {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#auth-box input {
+    width: auto;
+}
+
+#auth-status {
+    font-size: 0.85rem;
+}
+
+.paper-toolbar {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.paper-card {
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.paper-card strong a {
+    text-decoration: none;
+}
+
+.paper-detail {
+    margin-top: 0.5rem;
+}

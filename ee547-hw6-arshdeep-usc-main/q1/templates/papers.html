@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}Papers · ArXiv Browser{% endblock %}
+
+{% block content %}
+<section>
+    <header>
+        <h1>Papers</h1>
+    </header>
+
+    <form role="search" class="paper-toolbar">
+        <label for="category-select">Category</label>
+        <select id="category-select" name="category">
+            {% for option in category_options %}
+                <option value="{{ option }}" {% if option == category %}selected{% endif %}>{{ option }}</option>
+            {% endfor %}
+        </select>
+    </form>
+
+    <div id="paper-list">
+        {% if error %}
+            <p>{{ error }}</p>
+        {% elif papers %}
+            {% for paper in papers %}
+                {% include '_paper_card.html' %}
+            {% endfor %}
+        {% else %}
+            <p>No papers found for this category.</p>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

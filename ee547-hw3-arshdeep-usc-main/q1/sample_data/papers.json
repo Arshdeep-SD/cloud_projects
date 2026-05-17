@@ -1,0 +1,1095 @@
+[
+  {
+    "arxiv_id": "2602.10117v1",
+    "title": "Biases in the Blind Spot: Detecting What LLMs Fail to Mention",
+    "authors": [
+      "Iván Arcuschin",
+      "David Chanin",
+      "Adrià Garriga-Alonso",
+      "Oana-Maria Camburu"
+    ],
+    "abstract": "Large Language Models (LLMs) often provide chain-of-thought (CoT) reasoning traces that appear plausible, but may hide internal biases. We call these *unverbalized biases*. Monitoring models via their stated reasoning is therefore unreliable, and existing bias evaluations typically require predefined categories and hand-crafted datasets. In this work, we introduce a fully automated, black-box pipeline for detecting task-specific unverbalized biases. Given a task dataset, the pipeline uses LLM autoraters to generate candidate bias concepts. It then tests each concept on progressively larger input samples by generating positive and negative variations, and applies statistical techniques for multiple testing and early stopping. A concept is flagged as an unverbalized bias if it yields statistically significant performance differences while not being cited as justification in the model's CoTs. We evaluate our pipeline across six LLMs on three decision tasks (hiring, loan approval, and university admissions). Our technique automatically discovers previously unknown biases in these models (e.g., Spanish fluency, English proficiency, writing formality). In the same run, the pipeline also validates biases that were manually identified by prior work (gender, race, religion, ethnicity). More broadly, our proposed approach provides a practical, scalable path to automatic task-specific bias discovery.",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2026-02-10T18:59:56Z",
+    "updated": "2026-02-10T18:59:56Z",
+    "abstract_stats": {
+      "total_words": 194,
+      "unique_words": 148,
+      "total_sentences": 13,
+      "avg_words_per_sentence": 14.923076923076923,
+      "avg_word_length": 6.072164948453608,
+      "longest_sentence_words": 26,
+      "shortest_sentence_words": 1,
+      "top_20_words": [
+        {
+          "word": "biases",
+          "frequency": 5
+        },
+        {
+          "word": "bias",
+          "frequency": 4
+        },
+        {
+          "word": "pipeline",
+          "frequency": 4
+        },
+        {
+          "word": "models",
+          "frequency": 3
+        },
+        {
+          "word": "unverbalized",
+          "frequency": 3
+        },
+        {
+          "word": "our",
+          "frequency": 3
+        },
+        {
+          "word": "llms",
+          "frequency": 2
+        },
+        {
+          "word": "reasoning",
+          "frequency": 2
+        },
+        {
+          "word": "work",
+          "frequency": 2
+        },
+        {
+          "word": "task-specific",
+          "frequency": 2
+        },
+        {
+          "word": "concept",
+          "frequency": 2
+        },
+        {
+          "word": "large",
+          "frequency": 1
+        },
+        {
+          "word": "language",
+          "frequency": 1
+        },
+        {
+          "word": "often",
+          "frequency": 1
+        },
+        {
+          "word": "provide",
+          "frequency": 1
+        },
+        {
+          "word": "chain-of-thought",
+          "frequency": 1
+        },
+        {
+          "word": "cot",
+          "frequency": 1
+        },
+        {
+          "word": "traces",
+          "frequency": 1
+        },
+        {
+          "word": "appear",
+          "frequency": 1
+        },
+        {
+          "word": "plausible",
+          "frequency": 1
+        }
+      ]
+    }
+  },
+  {
+    "arxiv_id": "2602.10104v1",
+    "title": "Olaf-World: Orienting Latent Actions for Video World Modeling",
+    "authors": [
+      "Yuxin Jiang",
+      "Yuchao Gu",
+      "Ivor W. Tsang",
+      "Mike Zheng Shou"
+    ],
+    "abstract": "Scaling action-controllable world models is limited by the scarcity of action labels. While latent action learning promises to extract control interfaces from unlabeled video, learned latents often fail to transfer across contexts: they entangle scene-specific cues and lack a shared coordinate system. This occurs because standard objectives operate only within each clip, providing no mechanism to align action semantics across contexts. Our key insight is that although actions are unobserved, their semantic effects are observable and can serve as a shared reference. We introduce Seq$Δ$-REPA, a sequence-level control-effect alignment objective that anchors integrated latent action to temporal feature differences from a frozen, self-supervised video encoder. Building on this, we present Olaf-World, a pipeline that pretrains action-conditioned video world models from large-scale passive video. Extensive experiments demonstrate that our method learns a more structured latent action space, leading to stronger zero-shot action transfer and more data-efficient adaptation to new control interfaces than state-of-the-art baselines.",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2026-02-10T18:58:41Z",
+    "updated": "2026-02-10T18:58:41Z",
+    "abstract_stats": {
+      "total_words": 154,
+      "unique_words": 113,
+      "total_sentences": 7,
+      "avg_words_per_sentence": 22.0,
+      "avg_word_length": 6.279220779220779,
+      "longest_sentence_words": 30,
+      "shortest_sentence_words": 12,
+      "top_20_words": [
+        {
+          "word": "action",
+          "frequency": 6
+        },
+        {
+          "word": "video",
+          "frequency": 4
+        },
+        {
+          "word": "latent",
+          "frequency": 3
+        },
+        {
+          "word": "world",
+          "frequency": 2
+        },
+        {
+          "word": "models",
+          "frequency": 2
+        },
+        {
+          "word": "control",
+          "frequency": 2
+        },
+        {
+          "word": "interfaces",
+          "frequency": 2
+        },
+        {
+          "word": "transfer",
+          "frequency": 2
+        },
+        {
+          "word": "across",
+          "frequency": 2
+        },
+        {
+          "word": "contexts",
+          "frequency": 2
+        },
+        {
+          "word": "shared",
+          "frequency": 2
+        },
+        {
+          "word": "our",
+          "frequency": 2
+        },
+        {
+          "word": "scaling",
+          "frequency": 1
+        },
+        {
+          "word": "action-controllable",
+          "frequency": 1
+        },
+        {
+          "word": "limited",
+          "frequency": 1
+        },
+        {
+          "word": "scarcity",
+          "frequency": 1
+        },
+        {
+          "word": "labels",
+          "frequency": 1
+        },
+        {
+          "word": "while",
+          "frequency": 1
+        },
+        {
+          "word": "learning",
+          "frequency": 1
+        },
+        {
+          "word": "promises",
+          "frequency": 1
+        }
+      ]
+    }
+  },
+  {
+    "arxiv_id": "2602.10100v1",
+    "title": "Towards Explainable Federated Learning: Understanding the Impact of Differential Privacy",
+    "authors": [
+      "Júlio Oliveira",
+      "Rodrigo Ferreira",
+      "André Riker",
+      "Glaucio H. S. Carvalho",
+      "Eirini Eleni Tsilopoulou"
+    ],
+    "abstract": "Data privacy and eXplainable Artificial Intelligence (XAI) are two important aspects for modern Machine Learning systems. To enhance data privacy, recent machine learning models have been designed as a Federated Learning (FL) system. On top of that, additional privacy layers can be added, via Differential Privacy (DP). On the other hand, to improve explainability, ML must consider more interpretable approaches with reduced number of features and less complex internal architecture. In this context, this paper aims to achieve a machine learning (ML) model that combines enhanced data privacy with explainability. So, we propose a FL solution, called Federated EXplainable Trees with Differential Privacy (FEXT-DP), that: (i) is based on Decision Trees, since they are lightweight and have superior explainability than neural networks-based FL systems; (ii) provides additional layer of data privacy protection applying Differential Privacy (DP) to the Tree-Based model. However, there is a side effect adding DP: it harms the explainability of the system. So, this paper also presents the impact of DP protection on the explainability of the ML model. The carried out performance assessment shows improvements of FEXT-DP in terms of a faster training, i.e., numbers of rounds, Mean Squared Error and explainability.",
+    "categories": [
+      "cs.LG",
+      "cs.CR"
+    ],
+    "published": "2026-02-10T18:58:11Z",
+    "updated": "2026-02-10T18:58:11Z",
+    "abstract_stats": {
+      "total_words": 197,
+      "unique_words": 117,
+      "total_sentences": 11,
+      "avg_words_per_sentence": 17.90909090909091,
+      "avg_word_length": 5.477157360406092,
+      "longest_sentence_words": 50,
+      "shortest_sentence_words": 1,
+      "top_20_words": [
+        {
+          "word": "privacy",
+          "frequency": 8
+        },
+        {
+          "word": "explainability",
+          "frequency": 6
+        },
+        {
+          "word": "data",
+          "frequency": 4
+        },
+        {
+          "word": "learning",
+          "frequency": 4
+        },
+        {
+          "word": "dp",
+          "frequency": 4
+        },
+        {
+          "word": "machine",
+          "frequency": 3
+        },
+        {
+          "word": "fl",
+          "frequency": 3
+        },
+        {
+          "word": "differential",
+          "frequency": 3
+        },
+        {
+          "word": "ml",
+          "frequency": 3
+        },
+        {
+          "word": "model",
+          "frequency": 3
+        },
+        {
+          "word": "explainable",
+          "frequency": 2
+        },
+        {
+          "word": "systems",
+          "frequency": 2
+        },
+        {
+          "word": "federated",
+          "frequency": 2
+        },
+        {
+          "word": "system",
+          "frequency": 2
+        },
+        {
+          "word": "additional",
+          "frequency": 2
+        },
+        {
+          "word": "paper",
+          "frequency": 2
+        },
+        {
+          "word": "trees",
+          "frequency": 2
+        },
+        {
+          "word": "fext-dp",
+          "frequency": 2
+        },
+        {
+          "word": "protection",
+          "frequency": 2
+        },
+        {
+          "word": "artificial",
+          "frequency": 1
+        }
+      ]
+    }
+  },
+  {
+    "arxiv_id": "2602.10099v1",
+    "title": "Learning on the Manifold: Unlocking Standard Diffusion Transformers with Representation Encoders",
+    "authors": [
+      "Amandeep Kumar",
+      "Vishal M. Patel"
+    ],
+    "abstract": "Leveraging representation encoders for generative modeling offers a path for efficient, high-fidelity synthesis. However, standard diffusion transformers fail to converge on these representations directly. While recent work attributes this to a capacity bottleneck proposing computationally expensive width scaling of diffusion transformers we demonstrate that the failure is fundamentally geometric. We identify Geometric Interference as the root cause: standard Euclidean flow matching forces probability paths through the low-density interior of the hyperspherical feature space of representation encoders, rather than following the manifold surface. To resolve this, we propose Riemannian Flow Matching with Jacobi Regularization (RJF). By constraining the generative process to the manifold geodesics and correcting for curvature-induced error propagation, RJF enables standard Diffusion Transformer architectures to converge without width scaling. Our method RJF enables the standard DiT-B architecture (131M parameters) to converge effectively, achieving an FID of 3.37 where prior methods fail to converge. Code: https://github.com/amandpkr/RJF",
+    "categories": [
+      "cs.LG",
+      "cs.CV"
+    ],
+    "published": "2026-02-10T18:58:04Z",
+    "updated": "2026-02-10T18:58:04Z",
+    "abstract_stats": {
+      "total_words": 151,
+      "unique_words": 106,
+      "total_sentences": 10,
+      "avg_words_per_sentence": 15.1,
+      "avg_word_length": 6.496688741721854,
+      "longest_sentence_words": 33,
+      "shortest_sentence_words": 3,
+      "top_20_words": [
+        {
+          "word": "standard",
+          "frequency": 4
+        },
+        {
+          "word": "converge",
+          "frequency": 4
+        },
+        {
+          "word": "rjf",
+          "frequency": 4
+        },
+        {
+          "word": "diffusion",
+          "frequency": 3
+        },
+        {
+          "word": "representation",
+          "frequency": 2
+        },
+        {
+          "word": "encoders",
+          "frequency": 2
+        },
+        {
+          "word": "generative",
+          "frequency": 2
+        },
+        {
+          "word": "transformers",
+          "frequency": 2
+        },
+        {
+          "word": "fail",
+          "frequency": 2
+        },
+        {
+          "word": "width",
+          "frequency": 2
+        },
+        {
+          "word": "scaling",
+          "frequency": 2
+        },
+        {
+          "word": "geometric",
+          "frequency": 2
+        },
+        {
+          "word": "flow",
+          "frequency": 2
+        },
+        {
+          "word": "matching",
+          "frequency": 2
+        },
+        {
+          "word": "manifold",
+          "frequency": 2
+        },
+        {
+          "word": "enables",
+          "frequency": 2
+        },
+        {
+          "word": "leveraging",
+          "frequency": 1
+        },
+        {
+          "word": "modeling",
+          "frequency": 1
+        },
+        {
+          "word": "offers",
+          "frequency": 1
+        },
+        {
+          "word": "path",
+          "frequency": 1
+        }
+      ]
+    }
+  },
+  {
+    "arxiv_id": "2602.10097v1",
+    "title": "Step-resolved data attribution for looped transformers",
+    "authors": [
+      "Georgios Kaissis",
+      "David Mildenberger",
+      "Juan Felipe Gomez",
+      "Martin J. Menten",
+      "Eleni Triantafillou"
+    ],
+    "abstract": "We study how individual training examples shape the internal computation of looped transformers, where a shared block is applied for $τ$ recurrent iterations to enable latent reasoning. Existing training-data influence estimators such as TracIn yield a single scalar score that aggregates over all loop iterations, obscuring when during the recurrent computation a training example matters. We introduce \\textit{Step-Decomposed Influence (SDI)}, which decomposes TracIn into a length-$τ$ influence trajectory by unrolling the recurrent computation graph and attributing influence to specific loop iterations. To make SDI practical at transformer scale, we propose a TensorSketch implementation that never materialises per-example gradients. Experiments on looped GPT-style models and algorithmic reasoning tasks show that SDI scales excellently, matches full-gradient baselines with low error and supports a broad range of data attribution and interpretability tasks with per-step insights into the latent reasoning process.",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2026-02-10T18:57:53Z",
+    "updated": "2026-02-10T18:57:53Z",
+    "abstract_stats": {
+      "total_words": 137,
+      "unique_words": 98,
+      "total_sentences": 5,
+      "avg_words_per_sentence": 27.4,
+      "avg_word_length": 6.328467153284672,
+      "longest_sentence_words": 39,
+      "shortest_sentence_words": 17,
+      "top_20_words": [
+        {
+          "word": "influence",
+          "frequency": 4
+        },
+        {
+          "word": "computation",
+          "frequency": 3
+        },
+        {
+          "word": "recurrent",
+          "frequency": 3
+        },
+        {
+          "word": "iterations",
+          "frequency": 3
+        },
+        {
+          "word": "reasoning",
+          "frequency": 3
+        },
+        {
+          "word": "sdi",
+          "frequency": 3
+        },
+        {
+          "word": "training",
+          "frequency": 2
+        },
+        {
+          "word": "looped",
+          "frequency": 2
+        },
+        {
+          "word": "latent",
+          "frequency": 2
+        },
+        {
+          "word": "tracin",
+          "frequency": 2
+        },
+        {
+          "word": "loop",
+          "frequency": 2
+        },
+        {
+          "word": "tasks",
+          "frequency": 2
+        },
+        {
+          "word": "study",
+          "frequency": 1
+        },
+        {
+          "word": "individual",
+          "frequency": 1
+        },
+        {
+          "word": "examples",
+          "frequency": 1
+        },
+        {
+          "word": "shape",
+          "frequency": 1
+        },
+        {
+          "word": "internal",
+          "frequency": 1
+        },
+        {
+          "word": "transformers",
+          "frequency": 1
+        },
+        {
+          "word": "shared",
+          "frequency": 1
+        },
+        {
+          "word": "block",
+          "frequency": 1
+        }
+      ]
+    }
+  },
+  {
+    "arxiv_id": "2602.10095v1",
+    "title": "Causality in Video Diffusers is Separable from Denoising",
+    "authors": [
+      "Xingjian Bai",
+      "Guande He",
+      "Zhengqi Li",
+      "Eli Shechtman",
+      "Xun Huang",
+      "Zongze Wu"
+    ],
+    "abstract": "Causality -- referring to temporal, uni-directional cause-effect relationships between components -- underlies many complex generative processes, including videos, language, and robot trajectories. Current causal diffusion models entangle temporal reasoning with iterative denoising, applying causal attention across all layers, at every denoising step, and over the entire context. In this paper, we show that the causal reasoning in these models is separable from the multi-step denoising process. Through systematic probing of autoregressive video diffusers, we uncover two key regularities: (1) early layers produce highly similar features across denoising steps, indicating redundant computation along the diffusion trajectory; and (2) deeper layers exhibit sparse cross-frame attention and primarily perform intra-frame rendering. Motivated by these findings, we introduce Separable Causal Diffusion (SCD), a new architecture that explicitly decouples once-per-frame temporal reasoning, via a causal transformer encoder, from multi-step frame-wise rendering, via a lightweight diffusion decoder. Extensive experiments on both pretraining and post-training tasks across synthetic and real benchmarks show that SCD significantly improves throughput and per-frame latency while matching or surpassing the generation quality of strong causal diffusion baselines.",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "cs.LG"
+    ],
+    "published": "2026-02-10T18:57:21Z",
+    "updated": "2026-02-10T18:57:21Z",
+    "abstract_stats": {
+      "total_words": 175,
+      "unique_words": 126,
+      "total_sentences": 6,
+      "avg_words_per_sentence": 29.166666666666668,
+      "avg_word_length": 6.634285714285714,
+      "longest_sentence_words": 42,
+      "shortest_sentence_words": 19,
+      "top_20_words": [
+        {
+          "word": "causal",
+          "frequency": 6
+        },
+        {
+          "word": "diffusion",
+          "frequency": 5
+        },
+        {
+          "word": "denoising",
+          "frequency": 4
+        },
+        {
+          "word": "temporal",
+          "frequency": 3
+        },
+        {
+          "word": "reasoning",
+          "frequency": 3
+        },
+        {
+          "word": "across",
+          "frequency": 3
+        },
+        {
+          "word": "layers",
+          "frequency": 3
+        },
+        {
+          "word": "--",
+          "frequency": 2
+        },
+        {
+          "word": "models",
+          "frequency": 2
+        },
+        {
+          "word": "attention",
+          "frequency": 2
+        },
+        {
+          "word": "show",
+          "frequency": 2
+        },
+        {
+          "word": "separable",
+          "frequency": 2
+        },
+        {
+          "word": "multi-step",
+          "frequency": 2
+        },
+        {
+          "word": "rendering",
+          "frequency": 2
+        },
+        {
+          "word": "scd",
+          "frequency": 2
+        },
+        {
+          "word": "via",
+          "frequency": 2
+        },
+        {
+          "word": "causality",
+          "frequency": 1
+        },
+        {
+          "word": "referring",
+          "frequency": 1
+        },
+        {
+          "word": "uni-directional",
+          "frequency": 1
+        },
+        {
+          "word": "cause-effect",
+          "frequency": 1
+        }
+      ]
+    }
+  },
+  {
+    "arxiv_id": "2510.01278v2",
+    "title": "Noisy-Pair Robust Representation Alignment for Positive-Unlabeled Learning",
+    "authors": [
+      "Hengwei Zhao",
+      "Zhengzhong Tu",
+      "Zhuo Zheng",
+      "Wei Wang",
+      "Junjue Wang",
+      "Rusty Feagin",
+      "Wenzhe Jiao"
+    ],
+    "abstract": "Positive-Unlabeled (PU) learning aims to train a binary classifier (positive vs. negative) where only limited positive data and abundant unlabeled data are available. While widely applicable, state-of-the-art PU learning methods substantially underperform their supervised counterparts on complex datasets, especially without auxiliary negatives or pre-estimated parameters (e.g., a 14.26% gap on CIFAR-100 dataset). We identify the primary bottleneck as the challenge of learning discriminative representations under unreliable supervision. To tackle this challenge, we propose NcPU, a non-contrastive PU learning framework that requires no auxiliary information. NcPU combines a noisy-pair robust supervised non-contrastive loss (NoiSNCL), which aligns intra-class representations despite unreliable supervision, with a phantom label disambiguation (PLD) scheme that supplies conservative negative supervision via regret-based label updates. Theoretically, NoiSNCL and PLD can iteratively benefit each other from the perspective of the Expectation-Maximization framework. Empirically, extensive experiments demonstrate that: (1) NoiSNCL enables simple PU methods to achieve competitive performance; and (2) NcPU achieves substantial improvements over state-of-the-art PU methods across diverse datasets, including challenging datasets on post-disaster building damage mapping, highlighting its promise for real-world applications. Code: Code will be open-sourced after review.",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ],
+    "published": "2025-09-30T18:22:30Z",
+    "updated": "2026-02-10T18:56:09Z",
+    "abstract_stats": {
+      "total_words": 183,
+      "unique_words": 135,
+      "total_sentences": 12,
+      "avg_words_per_sentence": 15.25,
+      "avg_word_length": 6.868852459016393,
+      "longest_sentence_words": 42,
+      "shortest_sentence_words": 1,
+      "top_20_words": [
+        {
+          "word": "pu",
+          "frequency": 5
+        },
+        {
+          "word": "learning",
+          "frequency": 4
+        },
+        {
+          "word": "methods",
+          "frequency": 3
+        },
+        {
+          "word": "datasets",
+          "frequency": 3
+        },
+        {
+          "word": "supervision",
+          "frequency": 3
+        },
+        {
+          "word": "ncpu",
+          "frequency": 3
+        },
+        {
+          "word": "noisncl",
+          "frequency": 3
+        },
+        {
+          "word": "positive",
+          "frequency": 2
+        },
+        {
+          "word": "negative",
+          "frequency": 2
+        },
+        {
+          "word": "data",
+          "frequency": 2
+        },
+        {
+          "word": "state-of-the-art",
+          "frequency": 2
+        },
+        {
+          "word": "supervised",
+          "frequency": 2
+        },
+        {
+          "word": "auxiliary",
+          "frequency": 2
+        },
+        {
+          "word": "challenge",
+          "frequency": 2
+        },
+        {
+          "word": "representations",
+          "frequency": 2
+        },
+        {
+          "word": "unreliable",
+          "frequency": 2
+        },
+        {
+          "word": "non-contrastive",
+          "frequency": 2
+        },
+        {
+          "word": "framework",
+          "frequency": 2
+        },
+        {
+          "word": "label",
+          "frequency": 2
+        },
+        {
+          "word": "pld",
+          "frequency": 2
+        }
+      ]
+    }
+  },
+  {
+    "arxiv_id": "2602.10090v1",
+    "title": "Agent World Model: Infinity Synthetic Environments for Agentic Reinforcement Learning",
+    "authors": [
+      "Zhaoyang Wang",
+      "Canwen Xu",
+      "Boyi Liu",
+      "Yite Wang",
+      "Siwei Han",
+      "Zhewei Yao",
+      "Huaxiu Yao",
+      "Yuxiong He"
+    ],
+    "abstract": "Recent advances in large language model (LLM) have empowered autonomous agents to perform complex tasks that require multi-turn interactions with tools and environments. However, scaling such agent training is limited by the lack of diverse and reliable environments. In this paper, we propose Agent World Model (AWM), a fully synthetic environment generation pipeline. Using this pipeline, we scale to 1,000 environments covering everyday scenarios, in which agents can interact with rich toolsets (35 tools per environment on average) and obtain high-quality observations. Notably, these environments are code-driven and backed by databases, providing more reliable and consistent state transitions than environments simulated by LLMs. Moreover, they enable more efficient agent interaction compared with collecting trajectories from realistic environments. To demonstrate the effectiveness of this resource, we perform large-scale reinforcement learning for multi-turn tool-use agents. Thanks to the fully executable environments and accessible database states, we can also design reliable reward functions. Experiments on three benchmarks show that training exclusively in synthetic environments, rather than benchmark-specific ones, yields strong out-of-distribution generalization. The code is available at https://github.com/Snowflake-Labs/agent-world-model.",
+    "categories": [
+      "cs.AI",
+      "cs.CL",
+      "cs.LG"
+    ],
+    "published": "2026-02-10T18:55:41Z",
+    "updated": "2026-02-10T18:55:41Z",
+    "abstract_stats": {
+      "total_words": 180,
+      "unique_words": 128,
+      "total_sentences": 11,
+      "avg_words_per_sentence": 16.363636363636363,
+      "avg_word_length": 6.4222222222222225,
+      "longest_sentence_words": 30,
+      "shortest_sentence_words": 3,
+      "top_20_words": [
+        {
+          "word": "environments",
+          "frequency": 8
+        },
+        {
+          "word": "agents",
+          "frequency": 3
+        },
+        {
+          "word": "agent",
+          "frequency": 3
+        },
+        {
+          "word": "reliable",
+          "frequency": 3
+        },
+        {
+          "word": "model",
+          "frequency": 2
+        },
+        {
+          "word": "perform",
+          "frequency": 2
+        },
+        {
+          "word": "multi-turn",
+          "frequency": 2
+        },
+        {
+          "word": "tools",
+          "frequency": 2
+        },
+        {
+          "word": "training",
+          "frequency": 2
+        },
+        {
+          "word": "fully",
+          "frequency": 2
+        },
+        {
+          "word": "synthetic",
+          "frequency": 2
+        },
+        {
+          "word": "environment",
+          "frequency": 2
+        },
+        {
+          "word": "pipeline",
+          "frequency": 2
+        },
+        {
+          "word": "recent",
+          "frequency": 1
+        },
+        {
+          "word": "advances",
+          "frequency": 1
+        },
+        {
+          "word": "large",
+          "frequency": 1
+        },
+        {
+          "word": "language",
+          "frequency": 1
+        },
+        {
+          "word": "llm",
+          "frequency": 1
+        },
+        {
+          "word": "empowered",
+          "frequency": 1
+        },
+        {
+          "word": "autonomous",
+          "frequency": 1
+        }
+      ]
+    }
+  },
+  {
+    "arxiv_id": "2409.06740v3",
+    "title": "Data-efficient and Interpretable Inverse Materials Design using a Disentangled Variational Autoencoder",
+    "authors": [
+      "Cheng Zeng",
+      "Zulqarnain Khan",
+      "Nathan L. Post"
+    ],
+    "abstract": "Inverse materials design has proven successful in accelerating novel material discovery. Many inverse materials design methods use unsupervised learning where a latent space is learned to offer a compact description of materials representations. A latent space learned this way is likely to be entangled, in terms of the target property and other properties of the materials. This makes the inverse design process ambiguous. Here, we present a semi-supervised learning approach based on a disentangled variational autoencoder to learn a probabilistic relationship between features, latent variables and target properties. This approach is data efficient because it combines all labelled and unlabelled data in a coherent manner, and it uses expert-informed prior distributions to improve model robustness even with limited labelled data. It is in essence interpretable, as the learnable target property is disentangled out of the other properties of the materials, and an extra layer of interpretability can be provided by a post-hoc analysis of the classification head of the model. We demonstrate this new approach on an experimental high-entropy alloy dataset with chemical compositions as input and single-phase formation as the single target property. High-entropy alloys were chosen as example materials because of the vast chemical space of their possible combinations of compositions and atomic configurations. While single property is used in this work, the disentangled model can be extended to customize for inverse design of materials with multiple target properties.",
+    "categories": [
+      "cs.LG",
+      "cond-mat.mtrl-sci"
+    ],
+    "published": "2024-09-10T02:21:13Z",
+    "updated": "2026-02-10T18:34:17Z",
+    "abstract_stats": {
+      "total_words": 231,
+      "unique_words": 124,
+      "total_sentences": 10,
+      "avg_words_per_sentence": 23.1,
+      "avg_word_length": 5.766233766233766,
+      "longest_sentence_words": 40,
+      "shortest_sentence_words": 7,
+      "top_20_words": [
+        {
+          "word": "materials",
+          "frequency": 7
+        },
+        {
+          "word": "target",
+          "frequency": 5
+        },
+        {
+          "word": "inverse",
+          "frequency": 4
+        },
+        {
+          "word": "design",
+          "frequency": 4
+        },
+        {
+          "word": "property",
+          "frequency": 4
+        },
+        {
+          "word": "properties",
+          "frequency": 4
+        },
+        {
+          "word": "latent",
+          "frequency": 3
+        },
+        {
+          "word": "space",
+          "frequency": 3
+        },
+        {
+          "word": "approach",
+          "frequency": 3
+        },
+        {
+          "word": "disentangled",
+          "frequency": 3
+        },
+        {
+          "word": "data",
+          "frequency": 3
+        },
+        {
+          "word": "model",
+          "frequency": 3
+        },
+        {
+          "word": "learning",
+          "frequency": 2
+        },
+        {
+          "word": "learned",
+          "frequency": 2
+        },
+        {
+          "word": "because",
+          "frequency": 2
+        },
+        {
+          "word": "labelled",
+          "frequency": 2
+        },
+        {
+          "word": "high-entropy",
+          "frequency": 2
+        },
+        {
+          "word": "chemical",
+          "frequency": 2
+        },
+        {
+          "word": "compositions",
+          "frequency": 2
+        },
+        {
+          "word": "single",
+          "frequency": 2
+        }
+      ]
+    }
+  },
+  {
+    "arxiv_id": "2602.10067v1",
+    "title": "Features as Rewards: Scalable Supervision for Open-Ended Tasks via Interpretability",
+    "authors": [
+      "Aaditya Vikram Prasad",
+      "Connor Watts",
+      "Jack Merullo",
+      "Dhruvil Gala",
+      "Owen Lewis",
+      "Thomas McGrath",
+      "Ekdeep Singh Lubana"
+    ],
+    "abstract": "Language models trained on large-scale datasets have been shown to learn features that encode abstract concepts such as factuality or intent. Such features are traditionally used for test-time monitoring or steering. We present an alternative affordance: features as scalable supervision for open-ended tasks. We consider the case of hallucination-reduction as a desirable, yet open-ended behavior and design a reinforcement learning (RL) pipeline, titled RLFR (Reinforcement Learning from Feature Rewards), that uses features as reward functions. Grounded in a novel probing framework that identifies candidate hallucinated claims, our pipeline teaches a model to intervene and correct its completions when it is uncertain of their factuality. Furthermore, the pipeline enables scalable test-time compute, guided once more by our reward features. This end-to-end process operationalized on Gemma-3-12B-IT results in a policy that is 58% less likely to hallucinate compared to the original model, while preserving performance on standard benchmarks. Taken together, by grounding supervision in the language of features, this paper introduces a novel paradigm in the use of interpretability for learning open-ended tasks.",
+    "categories": [
+      "cs.LG"
+    ],
+    "published": "2026-02-10T18:33:45Z",
+    "updated": "2026-02-10T18:33:45Z",
+    "abstract_stats": {
+      "total_words": 171,
+      "unique_words": 114,
+      "total_sentences": 8,
+      "avg_words_per_sentence": 21.375,
+      "avg_word_length": 6.005847953216374,
+      "longest_sentence_words": 32,
+      "shortest_sentence_words": 10,
+      "top_20_words": [
+        {
+          "word": "features",
+          "frequency": 6
+        },
+        {
+          "word": "open-ended",
+          "frequency": 3
+        },
+        {
+          "word": "learning",
+          "frequency": 3
+        },
+        {
+          "word": "pipeline",
+          "frequency": 3
+        },
+        {
+          "word": "language",
+          "frequency": 2
+        },
+        {
+          "word": "factuality",
+          "frequency": 2
+        },
+        {
+          "word": "test-time",
+          "frequency": 2
+        },
+        {
+          "word": "scalable",
+          "frequency": 2
+        },
+        {
+          "word": "supervision",
+          "frequency": 2
+        },
+        {
+          "word": "tasks",
+          "frequency": 2
+        },
+        {
+          "word": "reinforcement",
+          "frequency": 2
+        },
+        {
+          "word": "reward",
+          "frequency": 2
+        },
+        {
+          "word": "novel",
+          "frequency": 2
+        },
+        {
+          "word": "our",
+          "frequency": 2
+        },
+        {
+          "word": "model",
+          "frequency": 2
+        },
+        {
+          "word": "models",
+          "frequency": 1
+        },
+        {
+          "word": "trained",
+          "frequency": 1
+        },
+        {
+          "word": "large-scale",
+          "frequency": 1
+        },
+        {
+          "word": "datasets",
+          "frequency": 1
+        },
+        {
+          "word": "shown",
+          "frequency": 1
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}{% if paper %}{{ paper.title }} · ArXiv Browser{% elif login_required %}Login Required · ArXiv Browser{% else %}Paper Not Found · ArXiv Browser{% endif %}{% endblock %}
+
+{% block content %}
+<section>
+    {% if paper %}
+        <article>
+            <header>
+                <h1>{{ paper.title }}</h1>
+                <p>
+                    {{ paper.authors | join(', ') if paper.authors else 'Unknown authors' }}
+                    · {{ paper.published }}
+                </p>
+            </header>
+
+            <p>{{ paper.abstract }}</p>
+
+            <p>
+                <strong>Categories:</strong>
+                {{ paper.categories | join(', ') if paper.categories else 'None listed' }}
+            </p>
+
+            <p>
+                <a href="https://arxiv.org/abs/{{ paper.arxiv_id }}" target="_blank" rel="noreferrer">
+                    View on arxiv.org →
+                </a>
+            </p>
+        </article>
+    {% else %}
+        <article>
+            {% if login_required %}
+                <header>
+                    <h1>Login required</h1>
+                </header>
+                <p>Log in to view paper details.</p>
+            {% elif error %}
+                <p>{{ error }}</p>
+            {% else %}
+                <header>
+                    <h1>Paper not found</h1>
+                </header>
+                <p>No paper exists for arXiv ID <strong>{{ arxiv_id }}</strong>.</p>
+            {% endif %}
+        </article>
+    {% endif %}
+</section>
+{% endblock %}

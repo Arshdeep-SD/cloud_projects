@@ -1,0 +1,10 @@
+<article class="paper-card" data-arxiv-id="{{ paper.arxiv_id }}">
+    <strong>
+        <a href="{{ url_for('paper_detail_page', arxiv_id=paper.arxiv_id) }}">{{ paper.title }}</a>
+    </strong>
+    <br>
+    <small>{{ paper.authors | join(', ') if paper.authors else 'Unknown authors' }}</small>
+    <span aria-hidden="true"> · </span>
+    <small>{{ paper.published }}</small>
+    <div class="paper-detail" style="display:none"></div>
+</article>
